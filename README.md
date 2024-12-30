@@ -23,9 +23,8 @@ Ensure you have the following installed on your machine:
 
 Clone the repository to your local machine using the following command:
 
-bash
-git clone [https://github.com/](https://github.com/)<your-username>/task-management-api.git
-cd task-management-api
+`git clone [https://github.com/](https://github.com/)<your-username>/task-management-api.git`
+`cd task-management-api`
 
 ### Step 2: Set Up a Virtual Environment
 
@@ -33,16 +32,17 @@ cd task-management-api
 
 On Windows (PowerShell):
 
-PowerShell
+#### PowerShell
 
-python -m venv env
-.\env\Scripts\Activate
-On macOS/Linux:
+`python -m venv env`
+`.\env\Scripts\Activate`
 
-Bash
+#### On macOS/Linux:
 
+```
 python3 -m venv env
 source env/bin/activate
+```
 
 ### Step 3: Install Dependencies
 
@@ -57,11 +57,8 @@ source env/bin/activate
 Update the database settings in task_management/settings.py.
 Apply migrations:
 
-`
-python manage.py makemigrations
-python manage.py migrate
-
-`
+`python manage.py makemigrations`
+`python manage.py migrate`
 
 ### Step 5: Run the Development Server
 
@@ -80,8 +77,7 @@ Note: The default development server address is http://127.0.0.1:8000/. This por
 ##### Once you're done, deactivate the virtual environment:
 
 Bash
-
-deactivate
+`deactivate`
 
 ## Additional Information
 
