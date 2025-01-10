@@ -7,3 +7,8 @@ pip install -r requirements.txt
 
 # Apply any outstanding database migrations
 python manage.py migrate
+
+# create sample users : 
+python manage.py shell < wsgi.py
+
+echo "Build completed and users created 🤝." 
