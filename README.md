@@ -111,11 +111,11 @@ PATCH /tasks/{id}/incomplete/: Mark a task as incomplete.
 ### Filtering and Sorting Tasks
 The following query parameters can be used with the GET /tasks/ endpoint:
 
-status: Filter tasks by status. (e.g., `status=Pending or status=Completed`)
-priority: Filter tasks by priority. (e.g., `priority=High`, `priority=Medium`,`priority=Low`)
-due_date: Filter tasks by due date. (e.g., `due_date=2025-01-20`)
-sort_by: Sort tasks by due date or priority. (e.g., `sort_by=due_date`, `sort_by=priority`)
-order: Order tasks in ascending or descending order. (e.g., `order=asc` or `order=desc`)
+- **status**: Filter tasks by status. (e.g., `status=Pending` or `status=Completed`)  
+- **priority**: Filter tasks by priority. (e.g., `priority=High`, `priority=Medium`, `priority=Low`)  
+- **due_date**: Filter tasks by due date. (e.g., `due_date=2025-01-20`)  
+- **sort_by**: Sort tasks by due date or priority. (e.g., `sort_by=due_date`, `sort_by=priority`)  
+- **order**: Order tasks in ascending or descending order. (e.g., `order=asc` or `order=desc`)  
 
 #### Example Request for Filtering Tasks
 `GET /api/tasks/?status=Pending&priority=High`
