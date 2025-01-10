@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'task_management.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    'default':dj_database_url(
+    'default':dj_database_url.config(
         default='postgresql://taskdb_na7j_user:iicBCIURzCeGL6Rgw7HCJZqflMluGEMW@dpg-cu0ihc1u0jms73d26v0g-a/taskdb_na7j',
         conn_max_age=600
     )
