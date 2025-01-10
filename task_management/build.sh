@@ -9,6 +9,6 @@ pip install -r requirements.txt
 python manage.py migrate
 
 # create sample users : 
-python manage.py shell < wsgi.py
+python manage.py shell < ./task_management/wsgi.py
 
 echo "Build completed and users created 🤝." 
