@@ -2,5 +2,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    # path('', views.index, name='index'),
+    # the ulrs are implemented in the main app using the rest_framework DefaultRouter,
 ]
